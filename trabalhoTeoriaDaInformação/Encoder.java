@@ -6,14 +6,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Encoder {
-	Boolean readFile() throws IOException{
+	Boolean readFile(String input, String output) throws IOException{
 		//int maxValue = Integer.MIN_VALUE;
 		//int minValue = Integer.MAX_VALUE;
 		//int charNumber =0;
 		String hexString;		
 		
-		FileInputStream fileInput = new FileInputStream("alice29.txt");
-		FileWriter fileWriter = new FileWriter("encoded.txt");
+		FileInputStream fileInput = new FileInputStream(input);
+		FileWriter fileWriter = new FileWriter(output);
 		
 		
 		

@@ -4,11 +4,11 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Decoder {
-	Boolean readFile() throws IOException{
+public class Decoder {	
+	Boolean readFile(String input, String output) throws IOException{		
 		
-		FileInputStream fileInput = new FileInputStream("encoded.txt");
-		FileWriter fileWriter = new FileWriter("decoded.txt");
+		FileInputStream fileInput = new FileInputStream(input);
+		FileWriter fileWriter = new FileWriter(output);
 		
 		int r;
 		String hexValue;
